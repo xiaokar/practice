@@ -1,0 +1,78 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+img{
+	width: 600px;
+	height: 400px;
+	float: left;
+}
+a{
+	text-decoration: none;
+}
+.container{
+	position: absolute;
+	width: 600px;
+	height: 400px;
+	margin: auto;
+	box-shadow: 0 0 20px green;
+	overflow: hidden;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
+.box{
+	position: absolute;
+	width: 4200px;
+	height: 400px;
+	z-index: 1;
+}
+.buttons{
+	position: absolute;
+	z-index: 2;
+	width: auto;
+	height: 20px;
+	left: 230px;
+	bottom: 10px;
+}
+.buttons span{
+	margin-left: 5px;
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	cursor: pointer;
+	background: green;
+	color: white;
+	text-align: center;
+}
+.buttons span:first-child{
+	margin: 0;
+}
+.on{
+	background: red !important;
+}
+.pre{
+	position: absolute;
+	z-index: 3;
+	left: 10px;
+	font-size: 100px;
+	font-weight: bold;
+	top: 130px;
+}
+.next{
+	position: absolute;
+	z-index: 3;
+	right: 10px;
+	font-size: 100px;
+	font-weight: bold;
+	top: 130px;
+}
+.pre:hover,.next:hover{
+	color: red;
+}
+.pre:active,.next:active{
+	top: 131px;
+	color: green;
+}
